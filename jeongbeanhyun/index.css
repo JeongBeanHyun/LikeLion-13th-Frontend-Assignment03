@@ -47,17 +47,26 @@ h4{
     color: white;
 }
 
-input{
-    margin-bottom: 6%;
+.inputGroup{
     width: 80%;
-    padding: 3.6%;
+    margin: 0 auto 16px auto;
+}
+
+.inputGroup input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.error{
+    width: 100%;
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+    text-align: left;
 }
 
 @media screen and (max-width:767px) {
-    *{
-        box-sizing: border-box;
-    }
-
     .sign{
         width: 100%;
         height: 100vh;
