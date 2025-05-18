@@ -1,98 +1,105 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+body {
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.head {
+  padding-top: 20px;
 }
 
 .sign {
-    background-color: white;
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(183, 183, 183);
 }
 
-.btns{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 6%;
+.btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 6%;
 }
 
-.btns button{
-    flex: 1;
-    padding: 3.5%;
-    border: none;
-}
-
-h4{
-    padding-top: 10px;
+.btns button {
+  flex: 1;
+  padding: 3.5%;
+  border: none;
 }
 
 .sub {
-    background-color: rgb(116, 116, 251);
-    color: white;
+  background-color: rgb(116, 116, 251);
+  color: white;
 }
 
 .re {
-    background-color: rgb(229, 77, 77);
-    color: white;
+  background-color: rgb(229, 77, 77);
+  color: white;
 }
 
-.inputGroup{
+.inputGroup {
+  width: 80%;
+  margin: 0 auto 16px auto;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.error {
+  width: 100%;
+  color: red;
+  font-size: 11px;
+  margin-top: 4px;
+  text-align: left;
+  height: 8px;
+}
+
+#toggle,
+#toggleConfirm {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: blue;
+}
+
+@media screen and (max-width: 767px) {
+  .sign {
+    width: 100%;
+    height: 100vh;
+  }
+
+  input,
+  .btns {
     width: 80%;
-    margin: 0 auto 16px auto;
-    position: relative;
-}
+  }
 
-.inputGroup input{
+  .btns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btns button {
     width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.error{
-    width: 100%;
-    color: red;
-    font-size: 12px;
-    margin-top: 4px;
-    text-align: left;
-}
-
-#toggle, #toggleConfirm{
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 12px;
-    color: blue;
-}
-
-@media screen and (max-width:767px) {
-    .sign{
-        width: 100%;
-        height: 100vh;
-    }
-
-    input, .btns{
-        width: 80%;
-    }
-
-    .btns{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .btns button{
-        width: 100%;
-    }
-    
+  }
 }
