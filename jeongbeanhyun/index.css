@@ -50,6 +50,7 @@ h4{
 .inputGroup{
     width: 80%;
     margin: 0 auto 16px auto;
+    position: relative;
 }
 
 .inputGroup input{
@@ -64,6 +65,15 @@ h4{
     font-size: 12px;
     margin-top: 4px;
     text-align: left;
+}
+
+#toggle, #toggleConfirm{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: blue;
 }
 
 @media screen and (max-width:767px) {

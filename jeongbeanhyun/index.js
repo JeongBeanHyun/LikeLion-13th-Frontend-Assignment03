@@ -67,6 +67,7 @@ function validatePasswordMatch(input, confirmInput, errorId){
     return true;
 }
 
+//submit 이벤트 함수
 function eventSubmit(e) {
     e.preventDefault();
 
@@ -85,4 +86,35 @@ function eventSubmit(e) {
     }
 }
 
+//form 이벤트리스너
 document.querySelector("form").addEventListener("submit", eventSubmit);
+
+//비밀번호 보기 토글
+function passwordToggle( ){
+    const pwInput = document.getElementById("pw");
+
+    if(pwInput.type === "password"){
+        pwInput.type = "text";
+    }else{
+        pwInput.type = "password";
+    }
+}
+
+//비밀번호 확인 보기 토글
+function passwordConfirmToggle( ){
+    const pwInput = document.getElementById("pwConfirm");
+
+    if(pwInput.type === "password"){
+        pwInput.type = "text";
+    }else{
+        pwInput.type = "password";
+    }
+}
+
+//비밀번호 보기 이벤트
+const passwordSpan = document.getElementById("toggle");
+passwordSpan.addEventListener("click", passwordToggle);
+
+const passwordConfirmSpan = document.getElementById("toggleConfirm");
+passwordConfirmSpan.addEventListener("click", passwordConfirmToggle);
+
